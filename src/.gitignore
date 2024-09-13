@@ -1,4 +1,7 @@
 Algo/
+gitignore.log
+classpath.log
+project.log
 
 # # ignore ALL .log files
 # *.log
