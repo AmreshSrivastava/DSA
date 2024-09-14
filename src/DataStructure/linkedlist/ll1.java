@@ -11,7 +11,7 @@ public class ll1 {
         l.add("4");
 
         for(int i=l.size(); i<=0; i--){
-         System.out.println(l.get(i));
+         System.out.println(l.get(i));  
         }
         System.out.println();
     }
