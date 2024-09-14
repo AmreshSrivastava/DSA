@@ -1,0 +1,31 @@
+The Hashtable class implements a hash table, which maps keys to values. Any non-null object can be used as a key or as a value. To successfully store and retrieve objects from a hashtable, the objects used as keys must implement the hashCode method and the equals method.  
+
+The java.util.Hashtable class is a class in Java that provides a key-value data structure, similar to the Map interface. It was part of the original Java Collections framework and was introduced in Java 1.0.
+
+Declaration:
+public class Hashtable<K,V> extends Dictionary<K,V> implements Map<K,V>, Cloneable, Serializable
+
+Features of Hashtable:
+It is similar to HashMap, but is synchronized.
+Hashtable stores key/value pair in hash table.
+In Hashtable we specify an object that is used as a key, and the value we want to associate to that key. The key is then hashed, and the resulting hash code is used as the index at which the value is stored within the table.
+The initial default capacity of Hashtable class is 11 whereas loadFactor is 0.75.
+HashMap doesn’t provide any Enumeration, while Hashtable provides not fail-fast Enumeration.
+
+Advantages of Hashtable:
+Thread-safe: The Hashtable class is thread-safe, meaning that multiple threads can access it simultaneously without causing data corruption or other synchronization issues.
+Simple to use: The Hashtable class is simple to use and provides basic key-value data structure functionality, which can be useful for simple cases.
+
+Disadvantages of Hashtable:
+Obsolete: The Hashtable class is considered obsolete and its use is generally discouraged. This is because it was designed prior to the introduction of the Collections framework and does not implement the Map interface, which makes it difficult to use in conjunction with other parts of the framework.
+Limited functionality: The Hashtable class provides basic key-value data structure functionality, but does not provide the full range of functionality that is available in the Map interface and its implementations.
+Poor performance: The Hashtable class is synchronized, which can result in slower performance compared to other implementations of the Map interface, such as HashMap or ConcurrentHashMap.
+
+Differences between HashMap and HashTable in Java
+HashMap and Hashtable store key and value pairs in a hash table. When using a Hashtable or HashMap, we specify an object that is used as a key and the value that you want to be linked to that key. The key is then hashed, and the resulting hash code is used as the index at which the value is stored within the table. Now let us discuss with the help of an example.
+
+Hashmap vs Hashtable 
+
+HashMap is non-synchronized. It is not thread-safe and can’t be shared between many threads without proper synchronization code whereas Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+HashMap allows one null key and multiple null values whereas Hashtable doesn’t allow any null key or value.
+HashMap is generally preferred over HashTable if thread synchronization is not needed.

@@ -2,6 +2,8 @@ What is Hashing?
 
 Hashing refers to the process of generating a fixed-size output from an input of variable size using the mathematical formulas known as hash functions. This technique determines an index or location for the storage of an item in a data structure.
 
+
+
 Table of Content
 
 What is Hashing?
@@ -13,6 +15,20 @@ Types of Hash functions:
 Properties of a Good hash function
 Complexity of calculating hash value using the hash function
 Problem with Hashing
+
+
+
+Hashing implementation:
+
+ Hashtable
+ HashMap
+ LinkedHashMap
+ ConcurrentHashMap
+ HashSet
+ LinkedHashSet
+ TreeSet
+
+
 What is Collision?
 How to handle Collisions?
 1) Separate Chaining
@@ -20,12 +36,16 @@ How to handle Collisions?
 2.a) Linear Probing
 2.b) Quadratic Probing
 2.c) Double Hashing
+
+
 What is meant by Load Factor in Hashing?
 What is Rehashing?
 Applications of Hash Data structure
 Real-Time Applications of Hash Data structure
 Advantages of Hash Data structure
 Disadvantages of Hash Data structure
+
+
 
 Need for Hash data structure
 The amount of data on the internet is growing exponentially every day, making it difficult to store it all effectively. In day-to-day programming, this amount of data might not be that big, but still, it needs to be stored, accessed, and processed easily and efficiently. A very common data structure that is used for such a purpose is the Array data structure.
@@ -34,20 +54,18 @@ Now the question arises if Array was already there, what was the need for a new 
 
 So now we are looking for a data structure that can store the data and search in it in constant time, i.e. in O(1) time. This is how Hashing data structure came into play. With the introduction of the Hash data structure, it is now possible to easily store data in constant time and retrieve them in constant time as well.
 
+
+
 Components of Hashing
 There are majorly three components of hashing:
 
 Key: A Key can be anything string or integer which is fed as input in the hash function the technique that determines an index or location for storage of an item in a data structure. 
 Hash Function: The hash function receives the input key and returns the index of an element in an array called a hash table. The index is known as the hash index.
 Hash Table: Hash table is a data structure that maps keys to values using a special function called a hash function. Hash stores the data in an associative manner in an array where each data value has its own unique index.
-Components of Hashing
-Components of Hashing
 
 What is Collision?
 The hashing process generates a small number for a big key, so there is a possibility that two keys could produce the same value. The situation where the newly inserted key maps to an already occupied, and it must be handled using some collision handling technology.
 
-Collision in Hashing
-Collision in Hashing
 
 Advantages of Hashing in Data Structures
 Key-value support: Hashing is ideal for implementing key-value data structures.
@@ -59,7 +77,7 @@ Security and encryption: Hashing is essential for secure data storage and integr
 
 
 Collision Resolution Techniques
-Last Updated : 05 Apr, 2024
+
 Languages like English or Spanish are not understood by computers, users must communicate with computers using a set of languages called programming languages. A computer can be programmed using a variety of language families. Computers are instruments created to address complicated issues, but only when a programming language and programmer are used. Computer software is what powers the various browsers, games, emails, operating systems, and applications. Any problem can be solved creatively through programming.
 
 Computational language is used in programming to provide the computer with a set of instructions for a task. With the right instruction groups and specialized software, any complexity issue can be resolved. There are three fundamental ideas in computer programming design. They are repetition, selection, and sequence. The series is the first essential idea that tells you to execute the instructions in a specific order; choosing the right command comes next. The repetition of the same action, often known as iteration, is the fourth idea. In the creative process of programming, the programmer chooses the appropriate commands to address any issue.
@@ -116,8 +134,6 @@ Double hashing: In this, you employ a different hashing algorithm, and in the it
 
 
 Applications, Advantages and Disadvantages of Hash Data Structure
-Last Updated : 28 Mar, 2023
-Introduction :
 
 Imagine a giant library where every book is stored in a specific shelf, but instead of searching through endless rows of shelves, you have a magical map that tells you exactly which shelf your book is on. That’s exactly what a Hash data structure does for your data!
 
@@ -166,11 +182,14 @@ Symbol tables: Hashes are used in symbol tables to store key-value pairs represe
 Cryptography: Hashes are used in cryptography to create digital signatures, verify the integrity of data, and store passwords securely. Hash functions are designed such that it is difficult to reconstruct the original data from the hash, making them useful for verifying the authenticity of data.
 Distributed systems: Hashes are used in distributed systems to assign work to different nodes or servers. For example, a load balancer might use a hash to distribute incoming requests to different servers based on the request URL or other criteria.
 File systems: Hashes are used in file systems to quickly locate files or data blocks. For example, a file system might use a hash to store the locations of files on a disk, with the keys being the file names and the values being the disk locations.
+
+
 Real-Time Applications of Hash:
 
 Hash is used for cache mapping for fast access of the data.
 Hash can be used for password verification.
 Hash is used in cryptography as a message digest.
+
 Applications of Hash::
 
 Hash provides better synchronization than other data structures.
@@ -185,6 +204,8 @@ Efficient insertion and deletion: Hashes are efficient at inserting and deleting
 Space efficiency: Hashes use space efficiently because they only store the key-value pairs and the array to hold them. This can be more efficient than other data structures such as trees, which require additional memory to store pointers.
 Flexibility: Hashes can be used to store any type of data, including strings, numbers, and objects. They can also be used for a wide variety of applications, from simple lookups to complex data structures such as databases and caches.
 Collision resolution: Hashes have built-in collision resolution mechanisms to handle cases where two or more keys map to the same array index. This ensures that all elements are stored and retrieved correctly.
+
+
 Disadvantages of Hash:
 
 Hash is inefficient when there are many collisions.
@@ -193,3 +214,4 @@ Hash does not allow null values.
 Hash tables have a limited capacity and will eventually fill up.
 Hash tables can be complex to implement.
 Hash tables do not maintain the order of elements, which makes it difficult to retrieve elements in a specific order.
+

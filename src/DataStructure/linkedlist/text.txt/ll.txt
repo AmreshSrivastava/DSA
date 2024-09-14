@@ -279,11 +279,28 @@ Deleting from the End of the list
 Deleting a Specific Node
 Display: This process displays the elements of a Circular linked list.
 
+Methods :
+
+add()              descendingIterator()          listIterator()              poll()
+addAll()              element()                    offer()                   pollFirst()
+addFirst()              get()                     offerFirst()               pollLast()
+addLast()              getFirst()                 offerLast()                pop()
+clear()                getLast()                   peek()                    push()
+clone()                indexOf()                   peekFirst()               remove()
+contains()           LastIndexOf()                 peekLast()                removeFirst()
+
+
+removeLast()
+removeLastOccurence()
+set()
+size()
+spliterator()
+toArray()
+toString()
+
+
 Implementation of Linked List:
 Below is the implementation of Linked List in different languages:
-
-
-
 // Java program to show the implementation of singly linked
 // list
 
