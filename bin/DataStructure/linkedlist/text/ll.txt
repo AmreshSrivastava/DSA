@@ -1,0 +1,454 @@
+Linked List Data Structure
+
+A linked list is a fundamental data structure in computer science. It mainly allows efficient insertion and deletion operations compared to arrays. Like arrays, it is also used to implement other data structures like stack, queue and deque.
+
+What is a Linked List?
+A linked list is a linear data structure that consists of a series of nodes connected by pointers (in C or C++) or references (in Java, Python and JavaScript). Each node contains data and a pointer/reference to the next node in the list. Unlike arrays, linked lists allow for efficient insertion or removal of elements from any position in the list, as the nodes are not stored contiguously in memory.
+
+Linked Lists vs Arrays
+Here’s the comparison of Linked List vs Arrays
+
+Linked List:
+Data Structure: Non-contiguous
+Memory Allocation: Typically allocated one by one to individual elements
+Insertion/Deletion: Efficient
+Access: Sequential
+Insertion time complexity: O(1)
+Searching time complexity: O(n)
+Array:
+Data Structure: Contiguous
+Memory Allocation: Typically allocated to the whole array
+Insertion/Deletion: Inefficient
+Access: Random
+Insertion time complexity: O(n)
+Searching time complexity: O(1)
+
+node - data,next
+
+(head)                      (tail)
+1  ---> 2 ---> 3 ---> 4 ---> null
+1  <---> 2 <---> 3 <---> 4 <---> null
+
+1  ---> 2 
+|       |
+4 <---  3
+
+
+Types of Linked List
+
+Singly 
+Doubly 
+Circular 
+Circular Doubly 
+Header 
+
+Operations of Linked Lists:
+
+Linked List Insertion
+Search an element in a Linked List (Iterative and Recursive)
+Find Length of a Linked List (Iterative and Recursive)
+Reverse a linked list
+Linked List Deletion (Deleting a given key)
+Linked List Deletion (Deleting a key at given position)
+Write a function to delete a Linked List
+Write a function to get Nth node in a Linked List
+Nth node from the end of a Linked List
+
+
+Methods :
+
+add()              descendingIterator()          listIterator()              poll()
+addAll()              element()                    offer()                   pollFirst()
+addFirst()              get()                     offerFirst()               pollLast()
+addLast()              getFirst()                 offerLast()                pop()
+clear()                getLast()                   peek()                    push()
+clone()                indexOf()                   peekFirst()               remove()
+contains()           LastIndexOf()                 peekLast()                removeFirst()
+
+
+removeLast()
+removeLastOccurence()
+set()
+size()
+spliterator()
+toArray()
+toString()
+
+
+Linked List Applications
+Implementing stacks and queues using linked lists.
+Using linked lists to handle collisions in hash tables.
+Representing graphs using linked lists.
+Allocating and deallocating memory dynamically.
+
+
+Easy Problem on Linked List:
+
+Print the middle of a given linked list
+Write a function that counts the number of times a given int occurs in a Linked List
+Check if a linked list is Circular Linked List
+Count nodes in Circular linked list
+Convert singly linked list into circular linked list
+Exchange first and last nodes in Circular Linked List
+Reverse a Doubly Linked List
+Program to find size of Doubly Linked List
+An interesting method to print reverse of a linked list
+Can we reverse a linked list in less than O(n)?
+Circular Linked List Traversal
+Delete a node in a Doubly Linked List
+
+Medium Problem on Linked List:
+
+Detect loop in a linked list
+Find length of loop in linked list
+Remove duplicates from a sorted linked list
+Intersection of two Sorted Linked Lists
+QuickSort on Singly Linked List
+Split a Circular Linked List into two halves
+Deletion from a Circular Linked List
+Merge Sort for Doubly Linked List
+Find pairs with given sum in doubly linked list
+Insert value in sorted way in a sorted doubly linked list
+Remove duplicates from an unsorted doubly linked list
+Rotate Doubly linked list by N nodes
+Given only a pointer to a node to be deleted in a singly linked list, how do you delete it?
+Modify contents of Linked List
+
+
+Basic Terminologies of Linked List
+
+Linked List is a linear data structure, in which elements are not stored at a contiguous location, rather they are linked using pointers. Linked List forms a series of connected nodes, where each node stores the data and the address of the next node.
+
+What is Linked List
+
+Node Structure: A node in a linked list typically consists of two components:
+
+Data: It holds the actual value or data associated with the node.
+Next Pointer or Reference : It stores the memory address (reference) of the next node in the sequence.
+Head and Tail: The linked list is accessed through the head node, which points to the first node in the list. The last node in the list points to NULL or nullptr, indicating the end of the list. This node is known as the tail node.
+
+Why linked list data structure needed?
+The main cases where we prefer linked list over arrays is due to ease of insertion and deletion in linked list
+
+Example: 
+
+In a system, if we maintain a sorted list of IDs in an array id[] = [1000, 1010, 1050, 2000, 2040]. 
+
+If we want to insert a new ID 1005, then to maintain the sorted order, we have to move all the elements after 1000 (excluding 1000). 
+
+Deletion is also expensive with arrays until unless some special techniques are used. For example, to delete 1010 in id[], everything after 1010 has to be moved due to this so much work is being done which affects the efficiency of the code.
+
+Please refer Applications, Advantages and Disadvantages of Linked List for more detailed use cases of linked list.
+
+Types of linked lists: 
+There are mainly three types of linked lists:
+
+Single-linked list
+Double linked list
+Circular linked list
+
+1. Single-linked list:
+In a singly linked list, each node contains a reference to the next node in the sequence. Traversing a singly linked list is done in a forward direction.
+
+
+
+2. Double-linked list:
+In a doubly linked list, each node contains references to both the next and previous nodes. This allows for traversal in both forward and backward directions, but it requires additional memory for the backward reference.
+
+
+
+3. Circular linked list:
+ In a circular linked list, the last node points back to the head node, creating a circular structure. It can be either singly or doubly linked.
+
+
+Operations on Linked Lists
+
+Insertion: Adding a new node to a linked list involves adjusting the pointers of the existing nodes to maintain the proper sequence. Insertion can be performed at the beginning, end, or any position within the list
+Deletion: Removing a node from a linked list requires adjusting the pointers of the neighboring nodes to bridge the gap left by the deleted node. Deletion can be performed at the beginning, end, or any position within the list.
+Searching: Searching for a specific value in a linked list involves traversing the list from the head node until the value is found or the end of the list is reached.
+
+
+
+Introduction to Linked List – Data Structure and Algorithm Tutorials
+
+Linked List is basically chains of nodes where each node contains information such as data and a pointer to the next node in the chain. It is a popular data structure with a wide range of real-world applications. In this article, we will provide a complete introduction of Linked List, which will help you tackle any problem based on Linked List.
+
+Table of Content
+
+What is a Linked List?
+Basic Terminologies of Linked List
+Importance of Linked List
+Types of Linked List
+Singly Linked List
+Doubly Linked List
+Circular Linked List
+Implementation of Linked List
+Linked List vs. Array
+Advantages of Linked List
+Disadvantages of Linked List
+Applications of Linked List
+Frequently Asked Questions (FAQs) about Linked list
+What is a Linked List?
+Linked List is a linear data structure which looks like a series of nodes, where each node has two parts: data and next pointer. Unlike Arrays, Linked List elements are not stored at a contiguous location. In the linked list there is a head pointer, which points to the first element of the linked list, and if the list is empty then it simply points to null or nothing.
+
+
+
+
+Basic Terminologies of Linked List
+Head: The Head of a linked list is a pointer to the first node or reference of the first node of linked list. This pointer marks the beginning of the linked list.
+Node: Linked List consists of a series of nodes where each node has two parts: data and next pointer.
+Data: Data is the part of node which stores the information in the linked list.
+Next pointer: Next pointer is the part of the node which points to the next node of the linked list.
+Importance of Linked List
+Here are a few advantages of a linked list that is listed below, it will help you understand why it is necessary to know.
+
+Dynamic Data structure: The size of memory can be allocated or de-allocated at run time based on the operation insertion or deletion.
+Ease of Insertion/Deletion: The insertion and deletion of elements are simpler than arrays since no elements need to be shifted after insertion and deletion, Just the address needed to be updated.
+Efficient Memory Utilization: As we know Linked List is a dynamic data structure the size increases or decreases as per the requirement so this avoids the wastage of memory. 
+Implementation: Various advanced data structures can be implemented using a linked list like a stack, queue, graph, hash maps, etc.
+
+
+Types of Linked List
+
+There are mainly three types of linked lists:
+
+Singly linked list
+Doubly linked list
+Circular linked list
+
+1. Singly Linked List
+Singly Linked List is a type of linked list where each node has two parts: data and next pointer. The data part stores the information and the next pointer points to the next node of the linked list. The next pointer of the last node stores null as it is the last node of the linked list and there is no next node. Traversal of items can be done in the forward direction only due to the linking of every node to its next node.
+
+Singly Linked List
+Node Definition of Singly Linked List
+
+// Singly linked list node in Java
+class Node {
+
+    // Data field
+    int data;
+
+    // Next node
+    Node next;
+
+    // Constructor to initialize a new node with data
+    Node(int new_data) {
+        data = new_data;
+        next = null;
+    }
+}
+
+Basic Operations on Singly Linked List
+The following are some basic operations performed on a Single Linked List:
+
+Insertion: The insertion operation can be performed in three ways. They are as follows:
+Inserting At the Beginning of the list
+Inserting At End of the list
+Inserting At Specific location in the list
+Deletion: The deletion operation can be performed in three ways. They are as follows:
+Deleting from the Beginning of the list
+Deleting from the End of the list
+Deleting a Specific Node
+Traverse: This process displays the elements of a Single-linked list.
+Search: It is a process of determining and retrieving a specific node either from the front, the end or anywhere in the list.
+
+
+2. Doubly Linked List:
+Doubly Linked List is a type of linked list where each node has three parts: data, next pointer and previous pointer. The data part stores the information, the next pointer points to the next node of the linked list and the previous pointer points to the previous node of the linked list. The next pointer of the last node and the previous pointer of the first node stores null. Traversal of items can be done in the forward direction as well as backward direction due to the linking of every node to its next node as well as the previous node.
+
+Doubly Linked List
+Node Definition of Doubly Linked List:
+
+// Doubly linked list node in Java
+class Node {
+
+    // Data field
+    int data;
+
+    // Previous node
+    Node prev;
+
+    // Next node
+    Node next;
+
+    // Constructor to initialize a new node with data
+    Node(int new_data) {
+        this.data = new_data;
+        this.prev = null;
+        this.next = null;
+    }
+}
+Operations on Doubly Linked List:
+In a doubly linked list, we perform the following operations…
+
+Insertion: The insertion operation can be performed in three ways as follows:
+Inserting At the Beginning of the list
+Inserting after a given node.
+Inserting at the end.
+Inserting before a given node
+Deletion: The deletion operation can be performed in three ways as follows…
+Deleting from the Beginning of the list
+Deleting from the End of the list
+Deleting a Specific Node
+Display: This process displays the elements of a double-linked list.
+
+
+3. Circular Linked List:
+A circular linked list is a type of linked list in which the first and the last nodes are also connected to each other to form a circle, there is no NULL at the end. 
+
+Commonly used operations on Circular Linked List:
+The following operations are performed on a Circular Linked List
+
+Insertion: The insertion operation can be performed in three ways:
+Insertion in an empty list
+Insertion at the beginning of the list 
+Insertion at the end of the list 
+Insertion in between the nodes 
+Deletion: The deletion operation can be performed in three ways:
+Deleting from the Beginning of the list
+Deleting from the End of the list
+Deleting a Specific Node
+Display: This process displays the elements of a Circular linked list.
+
+
+Implementation of Linked List:
+Below is the implementation of Linked List in different languages:
+// Java program to show the implementation of singly linked
+// list
+
+// A linked list node
+class Node {
+    int data;
+    Node next;
+
+    // Constructor to initialize a new node with data
+    Node(int new_data) {
+        data = new_data;
+        next = null;
+    }
+}
+
+public class GfG {
+
+    // Function to print the linked list
+    public static void printList(Node head) {
+        // Loop that runs till head is null
+        while (head != null) {
+
+            // Printing current node data
+            System.out.print(" " + head.data);
+
+            // Moving to the next node in the list
+            head = head.next;
+        }
+        System.out.println();
+    }
+
+    // Driver code
+    public static void main(String[] args) {
+      
+        // Create a hard-coded linked list:
+        // 2 -> 3 -> 4 -> 5 -> 6
+        Node head = new Node(2);
+        head.next = new Node(3);
+        head.next.next = new Node(4);
+        head.next.next.next = new Node(5);
+        head.next.next.next.next = new Node(6);
+
+        // Printing the above list
+        System.out.print("Linked List:");
+        printList(head);
+    }
+}
+
+Output
+Linked List: 2 3 4 5 6
+
+Linked List vs. Array:
+Array
+
+Linked List
+
+Arrays are stored in contiguous location.
+
+Linked Lists are not stored in contiguous location.
+
+Fixed size (Dynamic Sized Arrays also internally use fixed sized arrays)
+
+Dynamic Size
+
+Only store elements no extra reference / pointer.
+
+It stores both data and address of next node.
+
+Elements can be accessed easily in O(1) time.
+
+Elements can be access by traversing through all the nodes till we reach the required node.
+
+Insertion and deletion operation is slower than Linked List.
+
+Insertion and deletion operation is faster than Linked List.
+
+Time Complexity Analysis of Linked List and Array:
+Operation	Linked list	Array
+Random Access	O(N)	O(1)
+Insertion and deletion at beginning	O(1)	O(N)
+Insertion and deletion at end	O(N) (If we maintain only head)	O(1)
+Insertion and deletion at a random position	O(N)	O(N)
+
+Advantages of Linked List:
+Dynamic nature: Linked lists are used for dynamic memory allocation.
+Memory efficient: Memory consumption of a linked list is efficient as its size can grow or shrink dynamically according to our requirements, which means effective memory utilization hence, no memory wastage.
+Ease of Insertion and Deletion: Insertion and deletion of nodes are easily implemented in a linked list at any position.
+Implementation: For the implementation of stacks and queues and for the representation of trees and graphs.
+The linked list can be expanded in constant time.
+
+Disadvantages of Linked List:
+Memory usage: The use of pointers is more in linked lists hence, complex and requires more memory.
+Accessing a node: Random access is not possible due to dynamic memory allocation.
+Search operation costly: Searching for an element is costly and requires O(n) time complexity.
+Traversing in reverse order: Traversing is more time-consuming and reverse traversing is not possible in singly linked lists. 
+
+Applications of Linked List:
+Here are some of the applications of a linked list:
+
+Linear data structures such as stack, queue, and non-linear data structures such as hash maps, and graphs can be implemented using linked lists.
+Dynamic memory allocation: We use a linked list of free blocks.
+Implementation of graphs: Adjacency list representation of graphs is the most popular in that it uses linked lists to store adjacent vertices.
+In web browsers and editors, doubly linked lists can be used to build a forwards and backward navigation button.
+A circular doubly linked list can also be used for implementing data structures like Fibonacci heaps.
+
+Advantages of Linked Lists (or Most Common Use Cases):
+Linked Lists are mostly used because of their effective insertion and deletion.  We only need to change few pointers (or references) to insert (or delete) an item in the middle
+Insertion and deletion at any point in a linked list take O(1) time. Whereas in an array data structure, insertion / deletion in the middle takes O(n) time.
+This data structure is simple and can be also used to implement a stack, queues, and other abstract data structures.
+Implementation of Queue and Deque data structures : Simple array implementation is not efficient at all. We must use circular array to efficiently implement which is complex. But with linked list, it is easy and straightforward. That is why most of the language libraries use Linked List internally to implement these data structures..
+Linked List might turn out to be more space efficient compare to arrays in cases where we cannot guess the number of elements in advance. In case of arrays, the whole memory for items is allocated together. Even with dynamic sized arrays like vector in C++ or list in Python or ArrayList in Java. the internal working involves de-allocation of whole memory and allocation of a bigger chunk when insertions happen beyond the current capacity.
+
+
+Applications of Linked Lists:
+Linked Lists can be used to implement stacks, queue, deque, sparse matrices and adjacency list representation of graphs.
+Dynamic memory allocation in operating systems and compilers (linked list of free blocks).
+Manipulation of polynomials
+Arithmetic operations on long integers.
+In operating systems, they can be used in Memory management, process scheduling (for example circular linked list for round robin scheduling) and file system.
+Algorithms that need to frequently insert or delete items from large collections of data.
+LRU cache, which uses a doubly linked list to keep track of the most recently used items in a cache.
+
+
+Applications of Linked Lists in real world: 
+The list of songs in the music player are linked to the previous and next songs. 
+In a web browser, previous and next web page URLs can be linked through the previous and next buttons (Doubly Linked List)
+In image viewer, the previous and next images can be linked with the help of the previous and next buttons (Doubly Linked List)
+Circular Linked Lists can be used to implement things in round manner where we go to every element one by one.
+Linked List are preferred over arrays for implementations of Queue and Deque data structures because of fast deletions (or insertions) from the front of the linked lists.
+
+
+Disadvantages of Linked Lists:
+Linked lists are a popular data structure in computer science, but like any other data structure, they have certain disadvantages as well. Some of the key disadvantages of linked lists are:
+
+Slow Access Time: Accessing elements in a linked list can be slow, as you need to traverse the linked list to find the element you are looking for, which is an O(n) operation. This makes linked lists a poor choice for situations where you need to access elements quickly.
+Pointers or References: Linked lists use pointers or references to access the next node, which can make them more complex to understand and use compared to arrays. This complexity can make linked lists more difficult to debug and maintain.
+Higher overhead: Linked lists have a higher overhead compared to arrays, as each node in a linked list requires extra memory to store the reference to the next node.
+Cache Inefficiency: Linked lists are cache-inefficient because the memory is not contiguous. This means that when you traverse a linked list, you are not likely to get the data you need in the cache, leading to cache misses and slow performance.
+Easy to use : Arrays are relatively very easy to use and are available as core of programming languages
