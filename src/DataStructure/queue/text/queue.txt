@@ -1,0 +1,443 @@
+Queue Data Structure
+Last Updated : 30 Jul, 2024
+A Queue Data Structure is a fundamental concept in computer science used for storing and managing data in a specific order. It follows the principle of “First in, First out” (FIFO), where the first element added to the queue is the first one to be removed. Queues are commonly used in various algorithms and applications for their simplicity and efficiency in managing data flow.
+
+
+Queue Data Structure
+Table of Content
+
+What is Queue in Data Structures?
+Basic Operations of Queue Data Structure
+Applications of Queue
+Basics of Queue Data Structure
+Implementations of Queue in various Programming Languages
+Other Implementations of Queue Data Structure
+Easy Problems on Queue Data Structure
+Medium Problems on Queue Data Structure
+Hard Problems on Queue Data Structure
+What is Queue in Data Structures?
+A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle. It operates like a line where elements are added at one end (rear) and removed from the other end (front).
+
+Basic Operations of Queue Data Structure
+Enqueue (Insert): Adds an element to the rear of the queue.
+Dequeue (Delete): Removes and returns the element from the front of the queue.
+Peek: Returns the element at the front of the queue without removing it.
+Empty: Checks if the queue is empty.
+Full: Checks if the queue is full.
+Applications of Queue
+Task scheduling in operating systems
+Data transfer in network communication
+Simulation of real-world systems (e.g., waiting lines)
+Priority queues for event processing queues for event processing
+Implementation of Queues
+Queues can be implemented using Two techniques:
+
+Implementations of Queue Data Structure using Arrays
+Implementations of Queue Data Structure using Linked List
+Basics of Queue Data Structure
+Introduction to Queue – Data Structure and Algorithm Tutorials
+Basic Operations of Queue Data Structure
+Different Types of Queue
+Applications, Advantages and Disadvantages of Queue
+Implementations of Queue in various Programming Languages
+Queue in C++ Standard Template Library (STL)
+Queue Interface In Java
+Queue In Python
+Queue In C#
+Queue in JavaScript
+Other Implementations of Queue Data Structure
+Implementation of Deque using doubly linked list
+Implement a stack using single queue
+Implement Queue using Stacks
+How to efficiently implement k Queues in a single array?
+LRU Cache Implementation
+Easy Problems on Queue Data Structure
+Implement Stack using Queues
+Detect cycle in an undirected graph using BFS
+Breadth First Search or BFS for a Graph
+Traversing directory in Java using BFS
+Vertical order traversal of Binary Tree using Map
+Print Right View of a Binary Tree
+Find Minimum Depth of a Binary Tree
+Check whether a given graph is Bipartite or not
+Medium Problems on Queue Data Structure
+Flatten a multilevel linked list
+Level with maximum number of nodes
+Find if there is a path between two vertices in a directed graph
+Print all nodes between two given levels in Binary Tree
+Find next right node of a given key
+Minimum steps to reach target by a Knight
+Islands in a graph using BFS
+Level order traversal line by line | Set 3 (Using One Queue)
+Find the first non-repeating character from a stream of characters
+Hard Problems on Queue Data Structure
+Sliding Window Maximum (Maximum of all subarrays of size K)
+Flood Fill Algorithm
+Minimum time required to rot all oranges
+Shortest path in a Binary Maze
+An Interesting Method to Generate Binary Numbers from 1 to n
+Maximum cost path from source node to destination
+Shortest distance between two cells in a matrix or grid
+Snake and Ladder Problem
+Find shortest safe route in a path with landmines
+Count all possible walks from a source to a destination with exactly K edges
+Minimum Cost of Simple Path between two nodes in a directed and weighted graph
+Minimum Cost Path in a directed graph via given set of intermediate nodes
+Find the first circular tour that visits all petrol pumps
+
+
+Introduction to Queue Data Structure
+Last Updated : 16 Aug, 2024
+Queue Data Structure is a linear data structure that follows FIFO (First In First Out) Principle, so the first element inserted is the first to be popped out. In this article, we will cover all the basics of Queue, Operations on Queue, its implementation, advantages, disadvantages which will help you solve all the problems based on Queue.
+
+Introduction-to-Queue-(2)
+
+
+Table of Content
+
+What is Queue Data Structure?
+Representation of Queue Data Structure:
+Types of Queue Data Structure
+Basic Operations in Queue Data Structure
+1. Enqueue Operation in Queue Data Structure
+2. Dequeue Operation in Queue Data Structure
+3. Front Operation in Queue Data Structure
+4. Rear Operation in Queue Data Structure
+5. isEmpty Operation in Queue Data Structure
+6. isFull Operation in Queue Structure
+Implementation of Queue Data Structure
+Complexity Analysis of Operations on Queue Data Structure
+Applications of Queue Data Structure
+Advantages of Queue Data Structure
+Disadvantages of Queue Data Structure
+FAQs (Frequently asked questions) on Queue Data Structure
+What is Queue Data Structure?
+Queue Data Structure is a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order.
+
+We define a queue to be a list in which all additions to the list are made at one end (back of the queue), and all deletions from the list are made at the other end(front of the queue).  The element which is first pushed into the order, the delete operation is first performed on that.
+
+FIFO Principle of Queue Data Structure:
+A Queue is like a line waiting to purchase tickets, where the first person in line is the first person served. (i.e. First Come First Serve).
+Position of the entry in a queue ready to be served, that is, the first entry that will be removed from the queue, is called the front of the queue(sometimes, head of the queue). Similarly, the position of the last entry in the queue, that is, the one most recently added, is called the rear (or the tail) of the queue.
+FIFO-Principle-(First-In-First-Out)
+Representation of Queue Data Structure:
+The image below shows how we represent Queue Data Structure:
+
+Representation-of-Queue-Data-Structure
+Types of Queue Data Structure:
+Queue data structure can be classified into 4 types:
+
+Types-of-Queue-(1)
+
+There are different types of queues:
+
+Simple Queue: Simple Queue simply follows FIFO Structure. We can only insert the element at the back and remove the element from the front of the queue.
+Double-Ended Queue (Dequeue): In a double-ended queue the insertion and deletion operations, both can be performed from both ends. They are of two types:
+Input Restricted Queue: This is a simple queue. In this type of queue, the input can be taken from only one end but deletion can be done from any of the ends.
+Output Restricted Queue: This is also a simple queue. In this type of queue, the input can be taken from both ends but deletion can be done from only one end.
+Circular Queue: This is a special type of queue where the last position is connected back to the first position. Here also the operations are performed in FIFO order.
+Priority Queue: A priority queue is a special queue where the elements are accessed based on the priority assigned to them. They are of two types:
+Ascending Priority Queue: In Ascending Priority Queue, the elements are arranged in increasing order of their priority values. Element with smallest priority value is popped first.
+Descending Priority Queue: In Descending Priority Queue, the elements are arranged in decreasing order of their priority values. Element with largest priority is popped first.
+Basic Operations in Queue Data Structure:
+Some of the basic operations for Queue in Data Structure are:
+
+Enqueue: Adds (or stores) an element to the end of the queue..
+Dequeue: Removal of elements from the queue.
+Peek or front: Acquires the data element available at the front node of the queue without deleting it.
+rear: This operation returns the element at the rear end without removing it.
+isFull: Validates if the queue is full.
+isEmpty: Checks if the queue is empty.
+There are a few supporting operations (auxiliary operations):
+
+1. Enqueue Operation in Queue Data Structure: 
+Enqueue() operation in Queue adds (or stores) an element to the end of the queue.
+The following steps should be taken to enqueue (insert) data into a queue:
+
+Step 1: Check if the queue is full.
+Step 2: If the queue is full, return overflow error and exit.
+Step 3: If the queue is not full, increment the rear pointer to point to the next empty space.
+Step 4: Add the data element to the queue location, where the rear is pointing.
+Step 5: return success.
+Enqueue-Operation-in-Queue-5.webpEnqueue-Operation-in-Queue-5.webp
+Implementation of Enqueue:
+
+
+void queueEnqueue(int data)
+{
+    // Check queue is full or not
+    if (capacity == rear) {
+        System.out.println("\nQueue is full\n");
+        return;
+    }
+
+    // Insert element at the rear
+    else {
+        queue[rear] = data;
+        rear++;
+    }
+    return;
+}
+
+// This code is contributed by aadityapburujwale
+2. Dequeue Operation in Queue Data Structure: 
+Removes (or access) the first element from the queue.
+The following steps are taken to perform the dequeue operation:
+
+Step 1: Check if the queue is empty.
+Step 2: If the queue is empty, return the underflow error and exit.
+Step 3: If the queue is not empty, access the data where the front is pointing.
+Step 4: Increment the front pointer to point to the next available data element.
+Step 5: The Return success.
+Dequeue-Operation-in-Queue-1.webpDequeue-Operation-in-Queue-1.webp
+Implementation of dequeue:
+
+
+void queueDequeue()
+{
+    // If queue is empty
+    if (front == rear) {
+        System.out.println("\nQueue is empty\n");
+        return;
+    }
+
+    // Shift all the elements from index 2
+    // till rear to the left by one
+    else {
+        for (int i = 0; i < rear - 1; i++) {
+            queue[i] = queue[i + 1];
+        }
+
+        // decrement rear
+        rear--;
+    }
+    return;
+}
+
+// This code is contributed by aadityapburujwale
+3. Front Operation in Queue Data Structure: 
+This operation returns the element at the front end without removing it.
+
+
+
+// Function to get front of queue
+int front(Queue queue)
+{
+    if (isempty(queue))
+        return Integer.MIN_VALUE;
+    return queue.arr[queue.front];
+}
+
+// This code is contributed by aadityapburujwale
+4. Rear Operation in Queue Data Structure: 
+This operation returns the element at the rear end without removing it.
+
+
+
+public static int rear(Queue<Integer> myQueue)
+{
+    if (myQueue.isEmpty()) {
+        System.out.println("Queue is empty.");
+        return -1;
+    }
+
+    int rearElement = -1;
+    while (!myQueue.isEmpty()) {
+        rearElement = myQueue.poll();
+    }
+
+    return rearElement;
+}
+5. isEmpty Operation in Queue Data Structure: 
+This operation returns a boolean value that indicates whether the queue is empty or not.
+
+
+
+// This function will check whether
+// the queue is empty or not:
+boolean isEmpty()
+{
+    if (front == -1)
+        return true;
+    else
+        return false;
+}
+
+// This code is contributed by aadityapburujwale
+6. isFull Operation in Queue Structure: 
+This operation returns a boolean value that indicates whether the queue is full or not.
+
+
+
+// This function will check
+// whether the queue is full or not.
+boolean isFull()
+{
+    if (front == 0 && rear == MAX_SIZE - 1) {
+        return true;
+    }
+    return false;
+}
+
+// This code is contributed by aadityapburujwale
+Implementation of Queue Data Structure:
+Queue can be implemented using following data structures:
+
+Implementation of Queue using Arrays
+Implementation of Queue using Linked List
+We have discussed the implementation of Queue below:
+
+
+
+
+
+// Java program for array
+// implementation of queue
+
+// A class to represent a queue
+class Queue {
+    int front, rear, size;
+    int capacity;
+    int array[];
+
+    public Queue(int capacity)
+    {
+        this.capacity = capacity;
+        front = this.size = 0;
+        rear = capacity - 1;
+        array = new int[this.capacity];
+    }
+
+    // Queue is full when size becomes
+    // equal to the capacity
+    boolean isFull(Queue queue)
+    {
+        return (queue.size == queue.capacity);
+    }
+
+    // Queue is empty when size is 0
+    boolean isEmpty(Queue queue)
+    {
+        return (queue.size == 0);
+    }
+
+    // Method to add an item to the queue.
+    // It changes rear and size
+    void enqueue(int item)
+    {
+        if (isFull(this))
+            return;
+        this.rear = (this.rear + 1) % this.capacity;
+        this.array[this.rear] = item;
+        this.size = this.size + 1;
+        System.out.println(item + " enqueued to queue");
+    }
+
+    // Method to remove an item from queue.
+    // It changes front and size
+    int dequeue()
+    {
+        if (isEmpty(this))
+            return Integer.MIN_VALUE;
+
+        int item = this.array[this.front];
+        this.front = (this.front + 1) % this.capacity;
+        this.size = this.size - 1;
+        return item;
+    }
+
+    // Method to get front of queue
+    int front()
+    {
+        if (isEmpty(this))
+            return Integer.MIN_VALUE;
+
+        return this.array[this.front];
+    }
+
+    // Method to get rear of queue
+    int rear()
+    {
+        if (isEmpty(this))
+            return Integer.MIN_VALUE;
+
+        return this.array[this.rear];
+    }
+}
+
+// Driver class
+public class Test {
+    public static void main(String[] args)
+    {
+        Queue queue = new Queue(1000);
+
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.enqueue(40);
+
+        System.out.println(queue.dequeue()
+                           + " dequeued from queue");
+
+        System.out.println("Front item is "
+                           + queue.front());
+
+        System.out.println("Rear item is " + queue.rear());
+    }
+}
+
+// This code is contributed by Susobhan Akhuli
+
+Output
+10 enqueued to queue
+20 enqueued to queue
+30 enqueued to queue
+40 enqueued to queue
+10 dequeued from queue
+Front item is 20
+Rear item is 40
+Complexity Analysis of Operations on Queue Data Structure:
+Operations	Time Complexity	
+Space Complexity
+
+Enqueue	O(1)	
+O(1)
+
+Dequeue	O(1)	
+O(1)
+
+Front
+
+O(1)
+
+O(1)
+
+Back	O(1)	
+O(1)
+
+isEmpty	O(1)	
+O(1)
+
+isFull
+
+O(1)
+
+O(1)
+
+Applications of Queue Data Structure:
+Application of queue is common. In a computer system, there may be queues of tasks waiting for the printer, for access to disk storage, or even in a time-sharing system, for use of the CPU. Within a single program, there may be multiple requests to be kept in a queue, or one task may create other tasks, which must be done in turn by keeping them in a queue.
+
+Queue can be used in job scheduling like Printer Spooling.
+Queue can be used where we have a single resource and multiple consumers.
+In a network, a queue is used in devices such as a router/switch and mail queue.
+Queue can be used in various algorithm techniques like Breadth First Search, Topological Sort, etc.
+Advantages of Queue Data Structure:
+A large amount of data can be managed efficiently with ease.
+Operations such as insertion and deletion can be performed with ease as it follows the first in first out rule.
+Queues are useful when a particular service is used by multiple consumers.
+Queues are fast in speed for data inter-process communication.
+Queues can be used in the implementation of other data structures.
+Disadvantages of Queue Data Structure:
+The operations such as insertion and deletion of elements from the middle are time consuming.
+Searching an element takes O(N) time.
+Maximum size of a queue must be defined prior in case of array implementation.

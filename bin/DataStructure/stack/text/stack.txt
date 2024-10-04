@@ -1,0 +1,454 @@
+Stack Data Structure
+Last Updated : 30 Jul, 2024
+A Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out). LIFO implies that the element that is inserted last, comes out first and FILO implies that the element that is inserted first, comes out last.
+
+
+
+Table of Content
+
+What is Stack Data Structure?
+Basic Operations of Stack Data Structures
+Applications of Stack Data Structures
+Basics of Stack Data Structure
+Implementations of Stack in Different Languages
+Other Implementations of Stack Data Structures
+Easy Problems on Stack Data Structures
+Medium Problems on Stack Data Structures
+Hard Problems on Stack Data Structures
+What is Stack Data Structure?
+A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle. It behaves like a stack of plates, where the last plate added is the first one to be removed.
+
+Think of it this way:
+
+Pushing an element onto the stack is like adding a new plate on top.
+Popping an element removes the top plate from the stack.
+Key Operations on Stack Data Structures
+Push: Adds an element to the top of the stack.
+Pop: Removes the top element from the stack.
+Peek: Returns the top element without removing it.
+IsEmpty: Checks if the stack is empty.
+IsFull: Checks if the stack is full (in case of fixed-size arrays).
+Applications of Stack Data Structures
+Recursion
+Expression Evaluation and Parsing
+Depth-First Search (DFS)
+Undo/Redo Operations
+Browser History
+Function Calls
+Basics of Stack Data Structure
+Introduction to Stack – Data Structure and Algorithm Tutorials
+Basic Operations in Stack Data Structure
+Introduction to Monotonic Stack
+Implement a stack using singly linked list
+Applications, Advantages and Disadvantages of Stack
+Implementations of Stack in Different Languages
+Stack in C++ STL
+Stack Class in Java
+Stack in Python
+Stack in C#
+Implementation of Stack in JavaScript
+Other Implementations of Stack Data Structures
+Implement Queue using Stacks
+Design and Implement Special Stack Data Structure | Added Space Optimized Version
+Implement two stacks in an array
+Implement Stack using Queues
+How to efficiently implement k stacks in a single array?
+Design a stack that supports getMin() in O(1) time and O(1) extra space
+Implement a stack using single queue
+How to implement stack using priority queue or heap?
+Create a customized data structure which evaluates functions in O(1)
+Implement Stack and Queue using Deque
+Easy Problems on Stack Data Structures
+Infix to Postfix Conversion using Stack
+Prefix to Infix Conversion
+Prefix to Postfix Conversion
+Postfix to Prefix Conversion
+Postfix to Infix
+Convert Infix To Prefix Notation
+Check for balanced parentheses in an expression
+Arithmetic Expression Evalution
+Evaluation of Postfix Expression
+Reverse a stack using recursion
+Reverse individual words
+Reverse a string using stack
+Reversing a Queue
+Medium Problems on Stack Data Structures
+How to create mergable stack?
+The Stock Span Problem
+Next Greater Element
+Find next Smaller of next Greater in an array
+Largest Rectangular Area in a Histogram | Set 2
+Next Greater Frequency Element
+Maximum product of indexes of next greater on left and right
+Iterative Tower of Hanoi
+Sort a stack using a temporary stack
+Reverse a stack without using extra space in O(n)
+Delete middle element of a stack
+Check if a queue can be sorted into another queue using a stack
+Check if an array is stack sortable
+Iterative Postorder Traversal | Set 1 (Using Two Stacks)
+Largest Rectangular Area in a Histogram | Set 2
+Find maximum of minimum for every window size in a given array
+Find index of closing bracket for a given opening bracket in an expression
+Find maximum difference between nearest left and right smaller elements
+Delete consecutive same words in a sequence
+Check mirror in n-ary tree
+Reverse a number using stack
+Reversing the first K elements of a Queue
+Hard Problems on Stack Data Structures
+The Celebrity Problem
+Print next greater number of Q queries
+Iterative Postorder Traversal | Set 2 (Using One Stack)
+Print ancestors of a given binary tree node without recursion
+Length of the longest valid substring
+Expression contains redundant bracket or not
+Find if an expression has duplicate parenthesis or not
+Iterative method to find ancestors of a given binary tree
+Stack Permutations (Check if an array is stack permutation of other)
+Spaghetti Stack
+Remove brackets from an algebraic string containing + and – operators
+Range Queries for Longest Correct B
+
+
+What is Stack Data Structure? A Complete Tutorial
+Last Updated : 06 Jun, 2024
+Stack Data Structure is a linear data structure that follows LIFO (Last In First Out) Principle , so the last element inserted is the first to be popped out. In this article, we will cover all the basics of Stack, Operations on Stack, its implementation, advantages, disadvantages which will help you solve all the problems based on Stack.
+
+What-is-Stack-(1)
+Table of Content
+
+What is Stack Data Structure?
+Representation of Stack Data Structure:
+Types of Stack Data Structure:
+Basic Operations on Stack Data Structure
+Push Operation in Stack Data Structure
+Pop Operation in Stack Data Structure
+Top or Peek Operation in Stack Data Structure
+isEmpty Operation in Stack Data Structure
+isFull Operation in Stack Data Structure
+Implementation of Stack Data Structure
+Implementation of Stack Data Structure using Array
+Implementation of Stack Data Structure using Linked List
+Complexity Analysis of Operations on Stack Data Structure
+Advantages of Stack Data Structure
+Disadvantages of Stack Data Structure
+Applications of Stack Data Structure
+What is Stack Data Structure?
+Stack is a linear data structure based on LIFO(Last In First Out) principle in which the insertion of a new element and removal of an existing element takes place at the same end represented as the top of the stack.
+
+To implement the stack, it is required to maintain the pointer to the top of the stack , which is the last element to be inserted because we can access the elements only on the top of the stack.
+
+LIFO(Last In First Out) Principle in Stack Data Structure:
+This strategy states that the element that is inserted last will come out first. You can take a pile of plates kept on top of each other as a real-life example. The plate which we put last is on the top and since we remove the plate that is at the top, we can say that the plate that was put last comes out first.
+
+Representation of Stack Data Structure:
+Stack follows LIFO (Last In First Out) Principle so the element which is pushed last is popped first.
+
+Stack-representation-in-Data-Structures-(1)
+Types of Stack Data Structure:
+Fixed Size Stack : As the name suggests, a fixed size stack has a fixed size and cannot grow or shrink dynamically. If the stack is full and an attempt is made to add an element to it, an overflow error occurs. If the stack is empty and an attempt is made to remove an element from it, an underflow error occurs.
+Dynamic Size Stack : A dynamic size stack can grow or shrink dynamically. When the stack is full, it automatically increases its size to accommodate the new element, and when the stack is empty, it decreases its size. This type of stack is implemented using a linked list, as it allows for easy resizing of the stack.
+Basic Operations on Stack Data Structure:
+In order to make manipulations in a stack, there are certain operations provided to us.
+
+push() to insert an element into the stack
+pop() to remove an element from the stack
+top() Returns the top element of the stack.
+isEmpty() returns true if stack is empty else false.
+isFull() returns true if the stack is full else false.
+Push Operation in Stack Data Structure:
+Adds an item to the stack. If the stack is full, then it is said to be an Overflow condition.
+
+Algorithm for Push Operation:
+
+Before pushing the element to the stack, we check if the stack is full .
+If the stack is full (top == capacity-1) , then Stack Overflows and we cannot insert the element to the stack.
+Otherwise, we increment the value of top by 1 (top = top + 1) and the new value is inserted at top position .
+The elements can be pushed into the stack till we reach the capacity of the stack.
+Push-Operation-in-Stack-(1)
+Pop Operation in Stack Data Structure:
+Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the stack is empty, then it is said to be an Underflow condition.
+
+Algorithm for Pop Operation:
+
+Before popping the element from the stack, we check if the stack is empty .
+If the stack is empty (top == -1), then Stack Underflows and we cannot remove any element from the stack.
+Otherwise, we store the value at top, decrement the value of top by 1 (top = top – 1) and return the stored top value.
+Pop-Operation-in-Stack-(1)
+Top or Peek Operation in Stack Data Structure:
+Returns the top element of the stack.
+
+Algorithm for Top Operation:
+
+Before returning the top element from the stack, we check if the stack is empty.
+If the stack is empty (top == -1), we simply print “Stack is empty”.
+Otherwise, we return the element stored at index = top .
+Top-or-Peek-Operation-in-Stack-(1)
+isEmpty Operation in Stack Data Structure:
+Returns true if the stack is empty, else false.
+
+Algorithm for isEmpty Operation:
+
+Check for the value of top in stack.
+If (top == -1) , then the stack is empty so return true .
+Otherwise, the stack is not empty so return false .
+isEmpty-Operation-in-Stack-(1)
+isFull Operation in Stack Data Structure:
+Returns true if the stack is full, else false.
+
+Algorithm for isFull Operation:
+
+Check for the value of top in stack.
+If (top == capacity-1), then the stack is full so return true.
+Otherwise, the stack is not full so return false.
+isFull-Operation-in-Stack-(1)
+Implementation of Stack Data Structure:
+The basic operations that can be performed on a stack include push, pop, and peek. There are two ways to implement a stack –
+
+Using Array
+Using Linked List
+In an array-based implementation, the push operation is implemented by incrementing the index of the top element and storing the new element at that index. The pop operation is implemented by returning the value stored at the top index and then decrementing the index of the top element.
+
+In a linked list-based implementation, the push operation is implemented by creating a new node with the new element and setting the next pointer of the current top node to the new node. The pop operation is implemented by setting the next pointer of the current top node to the next node and returning the value of the current top node.
+
+Implementation of Stack Data Structure using Array:
+
+
+
+
+/* Java program to implement basic stack
+operations */
+class Stack {
+    static final int MAX = 1000;
+    int top;
+    int a[] = new int[MAX]; // Maximum size of Stack
+
+    boolean isEmpty()
+    {
+        return (top < 0);
+    }
+    Stack()
+    {
+        top = -1;
+    }
+
+    boolean push(int x)
+    {
+        if (top >= (MAX - 1)) {
+            System.out.println("Stack Overflow");
+            return false;
+        }
+        else {
+            a[++top] = x;
+            System.out.println(x + " pushed into stack");
+            return true;
+        }
+    }
+
+    int pop()
+    {
+        if (top < 0) {
+            System.out.println("Stack Underflow");
+            return 0;
+        }
+        else {
+            int x = a[top--];
+            return x;
+        }
+    }
+
+    int peek()
+    {
+        if (top < 0) {
+            System.out.println("Stack Underflow");
+            return 0;
+        }
+        else {
+            int x = a[top];
+            return x;
+        }
+    }
+   
+    void print(){
+    for(int i = top;i>-1;i--){
+      System.out.print(" "+ a[i]);
+    }
+  }
+}
+
+// Driver code
+class Main {
+    public static void main(String args[])
+    {
+        Stack s = new Stack();
+        s.push(10);
+        s.push(20);
+        s.push(30);
+        System.out.println(s.pop() + " Popped from stack");
+        System.out.println("Top element is :" + s.peek());
+        System.out.print("Elements present in stack :");
+        s.print();
+    }
+}
+//This code is Modified by Vinay Pandey
+
+Output
+10 pushed into stack
+20 pushed into stack
+30 pushed into stack
+30 Popped from stack
+Top element is : 20
+Elements present in stack : 20 10 
+Advantages of Array Implementation:
+
+Easy to implement.
+Memory is saved as pointers are not involved.
+Disadvantages of Array Implementation:
+
+It is not dynamic i.e., it doesn’t grow and shrink depending on needs at runtime. [But in case of dynamic sized arrays like vector in C++, list in Python, ArrayList in Java, stacks can grow and shrink with array implementation as well].
+The total size of the stack must be defined beforehand.
+Implementation of Stack Data Structure using Linked List:
+
+
+
+
+// Java Code for Linked List Implementation
+
+public class StackAsLinkedList {
+
+    StackNode root;
+
+    static class StackNode {
+        int data;
+        StackNode next;
+
+        StackNode(int data) { this.data = data; }
+    }
+
+    public boolean isEmpty()
+    {
+        if (root == null) {
+            return true;
+        }
+        else
+            return false;
+    }
+
+    public void push(int data)
+    {
+        StackNode newNode = new StackNode(data);
+
+        if (root == null) {
+            root = newNode;
+        }
+        else {
+            StackNode temp = root;
+            root = newNode;
+            newNode.next = temp;
+        }
+        System.out.println(data + " pushed to stack");
+    }
+
+    public int pop()
+    {
+        int popped = Integer.MIN_VALUE;
+        if (root == null) {
+            System.out.println("Stack is Empty");
+        }
+        else {
+            popped = root.data;
+            root = root.next;
+        }
+        return popped;
+    }
+
+    public int peek()
+    {
+        if (root == null) {
+            System.out.println("Stack is empty");
+            return Integer.MIN_VALUE;
+        }
+        else {
+            return root.data;
+        }
+    }
+
+    // Driver code
+    public static void main(String[] args)
+    {
+
+        StackAsLinkedList sll = new StackAsLinkedList();
+
+        sll.push(10);
+        sll.push(20);
+        sll.push(30);
+
+        System.out.println(sll.pop()
+                           + " popped from stack");
+
+        System.out.println("Top element is " + sll.peek());
+    
+        sll.push(10);
+        sll.push(20);
+        sll.push(30);
+
+        System.out.println(sll.pop()
+                           + " popped from stack");
+
+        System.out.println("Top element is " + sll.peek());
+    }
+}
+
+Output
+10 pushed to stack
+20 pushed to stack
+30 pushed to stack
+30 popped from stack
+Top element is 20
+Elements present in stack : 20 10 
+Advantages of Linked List implementation:
+
+The linked list implementation of a stack can grow and shrink according to the needs at runtime.
+It is used in many virtual machines like JVM.
+Disadvantages of Linked List implementation:
+
+Requires extra memory due to the involvement of pointers.
+Random accessing is not possible in stack.
+Complexity Analysis of Operations on Stack Data Structure:
+Operations	Time Complexity	
+Space Complexity
+
+push()	O(1)	
+O(1)
+
+pop()	O(1)	
+O(1)
+
+top() or peek()
+
+O(1)
+
+O(1)
+
+isEmpty()	O(1)	
+O(1)
+
+isFull()	O(1)	
+O(1)
+
+Advantages of Stack Data Structure:
+Simplicity: Stacks are a simple and easy-to-understand data structure, making them suitable for a wide range of applications.
+Efficiency: Push and pop operations on a stack can be performed in constant time (O(1)) , providing efficient access to data.
+Last-in, First-out (LIFO): Stacks follow the LIFO principle, ensuring that the last element added to the stack is the first one removed. This behavior is useful in many scenarios, such as function calls and expression evaluation.
+Limited memory usage: Stacks only need to store the elements that have been pushed onto them, making them memory-efficient compared to other data structures.
+Disadvantages of Stack Data Structure:
+Limited access: Elements in a stack can only be accessed from the top, making it difficult to retrieve or modify elements in the middle of the stack.
+Potential for overflow: If more elements are pushed onto a stack than it can hold, an overflow error will occur, resulting in a loss of data.
+Not suitable for random access: Stack s do not allow for random access to elements, making them unsuitable for applications where elements need to be accessed in a specific order.
+Limited capacity: Stacks have a fixed capacity, which can be a limitation if the number of elements that need to be stored is unknown or highly variable.
+Applications of Stack Data Structure:
+Infix to Postfix /Prefix conversion
+Redo-undo features at many places like editors, photoshop.
+Forward and backward features in web browsers
+In Memory management, any modern computer uses a stack as the primary management for a running purpose. Each program that is running in a computer system has its own memory allocations.
+Stack also helps in implementing function call in computers. The last called function is always completed first.

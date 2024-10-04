@@ -1,0 +1,405 @@
+Graph Data Structure And Algorithms
+Last Updated : 30 Sep, 2024
+Graph Data Structure is a collection of nodes connected by edges. It’s used to represent relationships between different entities. Graph algorithms are methods used to manipulate and analyze graphs, solving various problems like finding the shortest path or detecting cycles.
+
+graph-data-structure
+
+Table of Content
+
+What is Graph Data Structure?
+Components of a Graph
+Basic Operations on Graphs
+Applications of Graph
+Basics of Graph
+BFS and DFS in Graph
+Cycles in Graph
+Shortest Path in Graph
+Minimum Spanning Tree
+Topological Sorting
+Connectivity in Graph
+Maximum Flow in Graph
+Some must do Problems on Graph
+Some Quizzes
+What is Graph Data Structure?
+Graph is a non-linear data structure consisting of vertices and edges. The vertices are sometimes also referred to as nodes and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph is composed of a set of vertices( V ) and a set of edges( E ). The graph is denoted by G(V, E).
+
+Graph data structures are a powerful tool for representing and analyzing complex relationships between objects or entities. They are particularly useful in fields such as social network analysis, recommendation systems, and computer networks. In the field of sports data science, graph data structures can be used to analyze and understand the dynamics of team performance and player interactions on the field.
+
+Components of a Graph:
+Vertices: Vertices are the fundamental units of the graph. Sometimes, vertices are also known as vertex or nodes. Every node/vertex can be labeled or unlabeled.
+Edges: Edges are drawn or used to connect two nodes of the graph. It can be ordered pair of nodes in a directed graph. Edges can connect any two nodes in any possible way. There are no rules. Sometimes, edges are also known as arcs. Every edge can be labelled/unlabelled.
+Operations on Graphs:
+Basic Operations:
+
+Insertion of Nodes/Edges in the graph – Insert a node into the graph.
+Deletion of Nodes/Edges in the graph – Delete a node from the graph.
+Searching on Graphs – Search an entity in the graph.
+Traversal of Graphs – Traversing all the nodes in the graph.
+More Operations:
+
+Shortest Paths : From a source to a destination, a source to all other nodes and between all pairs.
+Minimum Spanning Tree : In a weighted, connected undirected graph, finding the minimum weight edges to connect all.
+Applications of Graph:
+Following are the real-life applications:
+If we recall all the previous data structures that we have studied like array, linked list, tree, etc. All these had some restrictions on structure (mostly linear and tree hierarchical which means no loops). Graph allows random connections between nodes which is useful in many real world problems where do have restrictions of previous data structures. 
+Used heavily in social networks. Everyone on the network is a vertex (or node) of the graph and if connected, then there is an edge. Now imagine all the features that you see, mutual friends, people that follow you, etc can seen as graph problems.
+Neural Networks: Vertices represent neurons and edges represent the synapses between them. Neural networks are used to understand how our brain works and how connections change when we learn. The human brain has about 10^11 neurons and close to 10^15 synapses.
+Compilers: Graph Data Structure is used extensively in compilers. They can be used for type inference, for so-called data flow analysis, register allocation, and many other purposes. They are also used in specialized compilers, such as query optimization in database languages.
+Robot planning: Vertices represent states the robot can be in and the edges the possible transitions between the states. Such graph plans are used, for example, in planning paths for autonomous vehicles.
+In GPS. The problems like finding the closest route, closest petrol pumps, etc are all soled using graph problems.
+For optimizing the cost of connecting all locations of a network. For example, minimizing wire length in a wired network to make sure all devices are connected is a standard Graph problem called Minimum Spanning Tree.
+Can be used to represent the interactions between players on a team, such as passes, shots, and tackles. Analyzing these interactions can provide insights into team dynamics and areas for improvement.
+Can be used to represent the topology of computer networks, such as the connections between routers and switches.
+Graphs are used to represent the connections between different places in a transportation network, such as roads and airports.
+Dependencies in a software project (or any other type of project) can be seen as graph and generating a sequence to solve all tasks before dependents is a standard graph topological sorting algorithm.
+Basics of Graph:
+Introduction to Graphs
+Graph and its representations
+Types of Graphs with Examples
+Basic Properties of a Graph
+Applications, Advantages and Disadvantages of Graph
+Transpose graph
+Difference between graph and tree
+BFS and DFS in Graph:
+Breadth First Traversal for a Graph
+Depth First Traversal for a Graph
+Applications of Depth First Search
+Applications of Breadth First Traversal
+Iterative Depth First Search
+BFS for Disconnected Graph
+Transitive Closure of a Graph using DFS
+Difference between BFS and DFS
+Cycles in Graph:
+Detect Cycle in a Directed Graph
+Detect cycle in an undirected graph
+Detect cycle in a direct graph using colors
+Detect a negative cycle in a Graph | (Bellman Ford)
+Cycles of length n in an undirected and connected graph
+Detecting negative cycle using Floyd Warshall
+Clone a Directed Acyclic Graph
+Union By Rank and Path Compression in Union-Find Algorithm
+Introduction to Disjoint Set Data Structure or Union-Find Algorithm
+Shortest Path in Graph:
+Dijkstra’s shortest path algorithm
+Bellman–Ford Algorithm
+Floyd Warshall Algorithm
+Johnson’s algorithm for All-pairs shortest paths
+Shortest Path in Directed Acyclic Graph
+Dial’s Algorithm
+Multistage Graph (Shortest Path)
+Shortest path in an unweighted graph
+Karp’s minimum mean (or average) weight cycle algorithm
+0-1 BFS (Shortest Path in a Binary Weight Graph)
+Find minimum weight cycle in an undirected graph
+Minimum Spanning Tree:
+Prim’s Minimum Spanning Tree (MST)
+Kruskal’s Minimum Spanning Tree Algorithm
+Difference between Prim’s and Kruskal’s algorithm for MST
+Applications of Minimum Spanning Tree Problem
+Minimum cost to connect all cities
+Total number of Spanning Trees in a Graph
+Minimum Product Spanning Tree
+Reverse Delete Algorithm for Minimum Spanning Tree
+Boruvka’s algorithm for Minimum Spanning Tree
+Topological Sorting:
+Topological Sorting
+All topological sorts of a Directed Acyclic Graph
+Kahn’s Algorithm for Topological Sorting
+Maximum edges that can be added to DAG so that is remains DAG
+Longest Path in a Directed Acyclic Graph
+Topological Sort of a graph using departure time of vertex
+Connectivity in Graph:
+Articulation Points (or Cut Vertices) in a Graph
+Biconnected Components
+Bridges in a graph
+Eulerian path and circuit
+Fleury’s Algorithm for printing Eulerian Path or Circuit
+Strongly Connected Components
+Count all possible walks from a source to a destination with exactly k edges
+Euler Circuit in a Directed Graph
+Length of shortest chain to reach the target word
+Find if an array of strings can be chained to form a circle
+Tarjan’s Algorithm to find strongly connected Components
+Paths to travel each nodes using each edge (Seven Bridges of Königsberg)
+Dynamic Connectivity | Set 1 (Incremental)
+Maximum Flow in Graph:
+Max Flow Problem Introduction
+Ford-Fulkerson Algorithm for Maximum Flow Problem
+Find maximum number of edge disjoint paths between two vertices
+Find minimum s-t cut in a flow network
+Maximum Bipartite Matching
+Channel Assignment Problem
+Introduction to Push Relabel Algorithm
+Karger’s Algorithm- Set 1- Introduction and Implementation
+Dinic’s algorithm for Maximum Flow
+Some must do Problems on Graph:
+Find length of the largest region in Boolean Matrix
+Count number of trees in a forest
+A Peterson Graph Problem
+Clone an Undirected Graph
+Graph Coloring (Introduction and Applications)
+Traveling Salesman Problem (TSP) Implementation
+Vertex Cover Problem | Set 1 (Introduction and Approximate Algorithm)
+K Centers Problem | Set 1 (Greedy Approximate Algorithm)
+Erdos Renyl Model (for generating Random Graphs)
+Chinese Postman or Route Inspection | Set 1 (introduction)
+Hierholzer’s Algorithm for directed graph
+Check whether a given graph is Bipartite or not
+Snake and Ladder Problem
+Boggle (Find all possible words in a board of characters)
+Hopcroft Karp Algorithm for Maximum Matching-Introduction
+Minimum Time to rot all oranges
+Construct a graph from given degrees of all vertices
+Determine whether a universal sink exists in a directed graph
+Number of sink nodes in a graph
+Two Clique Problem (Check if Graph can be divided in two Cliques)
+
+
+
+Introduction to Graph Data Structure
+Last Updated : 09 Aug, 2024
+Graph Data Structure is a non-linear data structure consisting of vertices and edges. It is useful in fields such as social network analysis, recommendation systems, and computer networks. In the field of sports data science, graph data structure can be used to analyze and understand the dynamics of team performance and player interactions on the field.
+
+Introduction-to-Graphs
+Table of Content
+
+What is Graph Data Structure?
+Components of Graph Data Structure
+Types Of Graph Data Structure
+Representation of Graph Data Structure
+Adjacency Matrix Representation of Graph Data Structure
+Adjacency List Representation of Graph
+Basic Operations on Graph Data Structure
+Difference between Tree and Graph
+Real-Life Applications of Graph Data Structure
+Advantages of Graph Data Structure
+Disadvantages of Graph Data Structure
+Frequently Asked Questions(FAQs) on Graph Data Structure
+What is Graph Data Structure?
+Graph is a non-linear data structure consisting of vertices and edges. The vertices are sometimes also referred to as nodes and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph is composed of a set of vertices( V ) and a set of edges( E ). The graph is denoted by G(V, E).
+
+Imagine a game of football as a web of connections, where players are the nodes and their interactions on the field are the edges. This web of connections is exactly what a graph data structure represents, and it’s the key to unlocking insights into team performance and player dynamics in sports.
+
+Components of Graph Data Structure
+Vertices: Vertices are the fundamental units of the graph. Sometimes, vertices are also known as vertex or nodes. Every node/vertex can be labeled or unlabelled.
+Edges: Edges are drawn or used to connect two nodes of the graph. It can be ordered pair of nodes in a directed graph. Edges can connect any two nodes in any possible way. There are no rules. Sometimes, edges are also known as arcs. Every edge can be labelled/unlabelled.
+Types Of Graphs in Data Structure and Algorithms
+1. Null Graph
+A graph is known as a null graph if there are no edges in the graph.
+
+2. Trivial Graph
+Graph having only a single vertex, it is also the smallest graph possible. 
+
+3. Undirected Graph
+A graph in which edges do not have any direction. That is the nodes are unordered pairs in the definition of every edge. 
+
+4. Directed Graph
+A graph in which edge has direction. That is the nodes are ordered pairs in the definition of every edge.
+
+
+
+5. Connected Graph
+The graph in which from one node we can visit any other node in the graph is known as a connected graph. 
+
+6. Disconnected Graph
+The graph in which at least one node is not reachable from a node is known as a disconnected graph.
+
+
+
+7. Regular Graph
+The graph in which the degree of every vertex is equal to K is called K regular graph.
+
+8. Complete Graph
+The graph in which from each node there is an edge to each other node.
+
+9. Cycle Graph
+The graph in which the graph is a cycle in itself, the minimum value of degree of each vertex is 2. 
+
+10. Cyclic Graph
+A graph containing at least one cycle is known as a Cyclic graph.
+
+
+
+11. Directed Acyclic Graph
+A Directed Graph that does not contain any cycle. 
+
+12. Bipartite Graph
+A graph in which vertex can be divided into two sets such that vertex in each set does not contain any edge between them.
+
+
+
+13. Weighted Graph
+ A graph in which the edges are already specified with suitable weight is known as a weighted graph. 
+ Weighted graphs can be further classified as directed weighted graphs and undirected weighted graphs. 
+Representation of Graph Data Structure:
+There are multiple ways to store a graph: The following are the most common representations.
+
+Adjacency Matrix
+Adjacency List
+Adjacency Matrix Representation of Graph Data Structure:
+In this method, the graph is stored in the form of the 2D matrix where rows and columns denote vertices. Each entry in the matrix represents the weight of the edge between those vertices. 
+
+adjacency_mat1-(1)-copy
+
+Below is the implementation of Graph Data Structure represented using Adjacency Matrix:
+
+
+
+
+
+import java.util.Arrays;
+
+public class GfG {
+
+    public static void addEdge(int[][] mat, int i, int j) {
+        mat[i][j] = 1;
+        mat[j][i] = 1; // Since the graph is undirected
+    }
+
+    public static void displayMatrix(int[][] mat) {
+        for (int[] row : mat) {
+            for (int val : row) {
+                System.out.print(val + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+
+        // Create a graph with 4 vertices and no edges
+        // Note that all values are initialized as 0
+        int V = 4;
+        int[][] mat = new int[V][V];
+
+        // Now add edges one by one
+        addEdge(mat, 0, 1);
+        addEdge(mat, 0, 2);
+        addEdge(mat, 1, 2);
+        addEdge(mat, 2, 3);
+
+        /* Alternatively we can also create using below
+           code if we know all edges in advance
+
+         int[][] mat = {{ 0, 1, 0, 0 },
+                        { 1, 0, 1, 0 },
+                        { 0, 1, 0, 1 },
+                        { 0, 0, 1, 0 } }; */
+
+        System.out.println("Adjacency Matrix Representation");
+        displayMatrix(mat);
+    }
+}
+
+Output
+Adjacency Matrix Representation
+0 1 1 0 
+1 0 1 0 
+1 1 0 1 
+0 0 1 0 
+Adjacency List Representation of Graph:
+This graph is represented as a collection of linked lists. There is an array of pointer which points to the edges connected to that vertex. 
+
+
+
+Below is the implementation of Graph Data Structure represented using Adjacency List:
+
+
+
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class GfG {
+    
+    // Method to add an edge between two vertices
+    public static void addEdge(List<List<Integer>> adj, int i, int j) {
+        adj.get(i).add(j);
+        adj.get(j).add(i); // Undirected
+    }
+
+    // Method to display the adjacency list
+    public static void displayAdjList(List<List<Integer>> adj) {
+        for (int i = 0; i < adj.size(); i++) {
+            System.out.print(i + ": "); // Print the vertex
+            for (int j : adj.get(i)) {
+                System.out.print(j + " "); // Print its adjacent 
+            }
+            System.out.println(); 
+        }
+    }
+
+    // Main method
+    public static void main(String[] args) {
+      
+        // Create a graph with 4 vertices and no edges
+        int V = 4;
+        List<List<Integer>> adj = new ArrayList<>(V); 
+        for (int i = 0; i < V; i++) {
+            adj.add(new ArrayList<>());
+        }
+
+        // Now add edges one by one
+        addEdge(adj, 0, 1);
+        addEdge(adj, 0, 2);
+        addEdge(adj, 1, 2);
+        addEdge(adj, 2, 3);
+
+        System.out.println("Adjacency List Representation:");
+        displayAdjList(adj);
+    }
+}
+
+Output
+Adjacency List Representation:
+0: 1 2 
+1: 0 2 
+2: 0 1 3 
+3: 2 
+Comparison between Adjacency Matrix and Adjacency List
+When the graph contains a large number of edges then it is good to store it as a matrix because only some entries in the matrix will be empty. An algorithm such as Prim’s and Dijkstra adjacency matrix is used to have less complexity.
+
+Action	Adjacency Matrix	Adjacency List
+Adding Edge	O(1)	O(1)
+Removing an edge	O(1)	O(N)
+Initializing	O(N*N)	O(N)
+Basic Operations on Graph Data Structure:
+Below are the basic operations on the graph:
+
+Insertion or Deletion of Nodes in the graph
+Add and Remove vertex in Adjacency List representation of Graph
+Add and Remove vertex in Adjacency Matrix representation of Graph
+Insertion or Deletion of Edges in the graph
+Add and Remove Edge in Adjacency List representation of a Graph
+Add and Remove Edge in Adjacency Matrix representation of a Graph
+Searching in Graph Data Structure- Search an entity in the graph.
+Traversal of Graph Data Structure- Traversing all the nodes in the graph.
+Difference between Tree and Graph:
+Tree is a restricted type of Graph Data Structure, just with some more rules. Every tree will always be a graph but not all graphs will be trees. Linked List, Trees, and Heaps all are special cases of graphs. 
+
+
+
+Real-Life Applications of Graph Data Structure:
+Graph Data Structure has numerous real-life applications across various fields. Some of them are listed below:
+
+
+If we recall all the previous data structures that we have studied like array, linked list, tree, etc. All these had some restrictions on structure (mostly linear and tree hierarchical which means no loops). Graph allows random connections between nodes which is useful in many real world problems where do have restrictions of previous data structures.
+Used heavily in social networks. Everyone on the network is a vertex (or node) of the graph and if connected, then there is an edge. Now imagine all the features that you see, mutual friends, people that follow you, etc can seen as graph problems.
+Used to represent the topology of computer networks, such as the connections between routers and switches.
+Used to represent the connections between different places in a transportation network, such as roads and airports.
+Neural Networks: Vertices represent neurons and edges represent the synapses between them. Neural networks are used to understand how our brain works and how connections change when we learn. The human brain has about 10^11 neurons and close to 10^15 synapses.
+Compilers: Graph Data Structure is used extensively in compilers. They can be used for type inference, for so-called data flow analysis, register allocation, and many other purposes. They are also used in specialized compilers, such as query optimization in database languages.
+Robot planning: Vertices represent states the robot can be in and the edges the possible transitions between the states. Such graph plans are used, for example, in planning paths for autonomous vehicles.
+Dependencies in a software project (or any other type of project) can be seen as graph and generating a sequence to solve all tasks before dependents is a standard graph topological sorting algorithm.
+For optimizing the cost of connecting all locations of a network. For example, minimizing wire length in a wired network to make sure all devices are connected is a standard Graph problem called Minimum Spanning Tree.
+Advantages of Graph Data Structure:
+Graph Data Structure used to represent a wide range of relationships as we do not have any restrictions like previous data structures (Tree cannot have loops and have to be hierarchical. Arrays, Linked List, etc are linear)
+They can be used to model and solve a wide range of problems, including pathfinding, data clustering, network analysis, and machine learning.
+Any real world problem where we certain set of items and relations between them can be easily modeled as a graph and a lot of standard graph algorithms like BFS, DFS, Spanning Tree, Shortest Path, Topological Sorting and Strongly Connected
+Graph Data Structure can be used to represent complex data structures in a simple and intuitive way, making them easier to understand and analyze.
+Disadvantages of Graph Data Structure:
+Graph Data Structure can be complex and difficult to understand, especially for people who are not familiar with graph theory or related algorithms.
+Creating and manipulating graphs can be computationally expensive, especially for very large or complex graphs.
+Graph algorithms can be difficult to design and implement correctly, and can be prone to bugs and errors.
+Graph Data Structure can be difficult to visualize and analyze, especially for very large or complex graphs, which can make it challenging to extract meaningful insights from the data.
