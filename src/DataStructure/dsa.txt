@@ -1,0 +1,365 @@
+Data Structures 
+Data structures are the fundamental building blocks of computer programming. They define how data is organized, stored, and manipulated within a program. Understanding data structures is very important for developing efficient and effective algorithms.
+
+What is Data Structure?
+A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
+
+A data structure is not only used for organizing the data. It is also used for processing, retrieving, and storing data. There are different basic and advanced types of data structures that are used in almost every program or software system that has been developed. So we must have good knowledge about data structures. 
+
+
+Classification of Data Structure
+
+                                     Data Structure
+                                           |
+                   -----------------------------------------------------                        
+                   |                                                    |
+        Linear Data Structure                                 Non-Linear Data Structure
+                   |                                                    |
+                   |                                                    | 
+           -------------------                                  ------------------
+           |                 |                                  |                 | 
+Static Data Structure     Dynamic Data Structure              Tree              Graph
+           |                  |
+           |          ------------------
+         Array        |       |         |
+                    Queue   Stack   LinkedList
+
+
+
+Linear Data Structure: Data structure in which data elements are arranged sequentially or linearly, where each element is attached to its previous and next adjacent elements, is called a linear data structure. 
+Example: Array, Stack, Queue, Linked List, etc.
+
+Static Data Structure: Static data structure has a fixed memory size. It is easier to access the elements in a static data structure. 
+Example: array.
+
+Dynamic Data Structure: In dynamic data structure, the size is not fixed. It can be randomly updated during the runtime which may be considered efficient concerning the memory (space) complexity of the code. 
+Example: Queue, Stack, etc.
+
+Non-Linear Data Structure: Data structures where data elements are not placed sequentially or linearly are called non-linear data structures. In a non-linear data structure, we can’t traverse all the elements in a single run only. 
+Examples: Trees and Graphs.
+
+
+Introduction to Data Structures
+Array Data Structure
+
+Linked List Data Structure
+1. Singly Linked List:
+2. Circular Linked List:
+3. Doubly Linked List:
+
+Matrix Data Structure
+Stack Data Structure
+Queue Data Structure
+Binary Tree Data Structure
+Binary Search Tree Data Structure
+Heap Data Structure
+Hashing Data Structure
+Graph Data Structure
+
+Advanced Data Structure
+1. Advanced Lists:
+2. Segment Tree Data Structure:
+3. Trie Data Structure:
+4. Binary Indexed Tree Data Structure:
+5. Suffix Array and Suffix Tree:
+6. AVL Tree:
+7. Splay Tree:
+8. B Tree:
+9. Red-Black Tree:
+10. K Dimensional Tree:
+
+
+
+Introduction to Data Structures
+What is Data Structure: Types, Classifications and Applications
+
+Introduction to Data Structures
+Common operations on various Data Structures
+
+Array Data Structure
+Search, insert and delete in an unsorted array
+Search, insert and delete in a sorted array
+Write a program to reverse an array
+Leaders in an array
+Given an array A[] and a number x, check for pair in A[] with sum as x
+Majority Element
+Find the Number Occurring Odd Number of Times
+Largest Sum Contiguous Subarray
+Find the Missing Number
+Search an element in a sorted and pivoted array
+Merge an array of size n into another array of size m+n
+Median of two sorted arrays
+Program for array rotation
+Reversal algorithm for array rotation
+Block swap algorithm for array rotation
+Maximum sum such that no two elements are adjacent
+Sort elements by frequency | Set 1
+Count Inversions in an array
+
+All Articles on Array
+Coding Practice on Array
+Quiz on Array
+Coding Practice on Array
+Recent Articles on Array
+
+Linked List Data Structure
+1. Singly Linked List:
+Introduction to Linked List
+Linked List vs Array
+Linked List Insertion
+Linked List Deletion (Deleting a given key)
+Linked List Deletion (Deleting a key at given position)
+A Programmer’s approach of looking at Array vs. Linked List
+Find Length of a Linked List (Iterative and Recursive)
+How to write C functions that modify head pointer of a Linked List?
+Swap nodes in a linked list without swapping data
+Reverse a linked list
+Merge two sorted linked lists
+Merge Sort for Linked Lists
+Reverse a Linked List in groups of given size
+Detect and Remove Loop in a Linked List
+Add two numbers represented by linked lists | Set 1
+Rotate a Linked List
+Generic Linked List in C
+2. Circular Linked List:
+Circular Linked List Introduction and Applications,
+Circular Singly Linked List Insertion
+Circular Linked List Traversal
+Split a Circular Linked List into two halves
+Sorted insert for circular linked list
+3. Doubly Linked List:
+Doubly Linked List Introduction and Insertion
+Delete a node in a Doubly Linked List
+Reverse a Doubly Linked List
+The Great Tree-List Recursion Problem.
+QuickSort on Doubly Linked List
+Merge Sort for Doubly Linked List
+
+All Articles of Linked List
+Coding Practice on Linked List
+Recent Articles on Linked List
+
+Matrix Data Structure
+Search in a row wise and column wise sorted matrix
+Print a given matrix in spiral form
+A Boolean Matrix Question
+Print unique rows in a given boolean matrix
+Maximum size square sub-matrix with all 1s
+Print unique rows in a given boolean matrix
+Inplace M x N size matrix transpose | Updated
+Dynamic Programming | Set 27 (Maximum sum rectangle in a 2D matrix)
+Strassen’s Matrix Multiplication
+Create a matrix with alternating rectangles of O and X
+Print all elements in sorted order from row and column wise sorted matrix
+Given an n x n square matrix, find sum of all sub-squares of size k x k
+Count number of islands where every island is row-wise and column-wise separated
+Find a common element in all rows of a given row-wise sorted matrix
+
+
+Stack Data Structure
+Introduction to Stack
+Infix to Postfix Conversion using Stack
+Evaluation of Postfix Expression
+Reverse a String using Stack
+Implement two stacks in an array
+Check for balanced parentheses in an expression
+Next Greater Element
+Reverse a stack using recursion
+Sort a stack using recursion
+The Stock Span Problem
+Design and Implement Special Stack Data Structure
+Implement Stack using Queues
+Design a stack with operations on middle element
+How to efficiently implement k stacks in a single array?
+Sort a stack using recursion
+
+
+Queue Data Structure
+Queue Introduction and Array Implementation
+Linked List Implementation of Queue
+Applications of Queue Data Structure
+Priority Queue Introduction
+Deque (Introduction and Applications)
+Implementation of Deque using circular array
+Implement Queue using Stacks
+Find the first circular tour that visits all petrol pumps
+Maximum of all subarrays of size k
+An Interesting Method to Generate Binary Numbers from 1 to n
+How to efficiently implement k Queues in a single array?
+
+
+Binary Tree Data Structure
+Binary Tree Introduction
+Binary Tree Properties
+Types of Binary Tree
+Handshaking Lemma and Interesting Tree Properties
+Enumeration of Binary Tree
+Applications of tree data structure
+Tree Traversals
+BFS vs DFS for Binary Tree
+Level Order Tree Traversal
+Diameter of a Binary Tree
+Inorder Tree Traversal without Recursion
+Inorder Tree Traversal without recursion and without stack!
+Threaded Binary Tree
+Maximum Depth or Height of a Tree
+If you are given two traversal sequences, can you construct the binary tree?
+Clone a Binary Tree with Random Pointers
+Construct Tree from given Inorder and Preorder traversals
+Maximum width of a binary tree
+Print nodes at k distance from root
+Print Ancestors of a given node in Binary Tree
+Check if a binary tree is subtree of another binary tree
+Connect nodes at same level
+
+
+Binary Search Tree Data Structure
+Search and Insert in BST
+Deletion from BST
+Minimum value in a Binary Search Tree
+Inorder predecessor and successor for a given key in BST
+Check if a binary tree is BST or not
+Lowest Common Ancestor in a Binary Search Tree.
+Inorder Successor in Binary Search Tree
+Find k-th smallest element in BST (Order Statistics in BST)
+Merge two BSTs with limited extra space
+Two nodes of a BST are swapped, correct the BST
+Floor and Ceil from a BST
+In-place conversion of Sorted DLL to Balanced BST
+Find a pair with given sum in a Balanced BST
+Total number of possible Binary Search Trees with n keys
+Merge Two Balanced Binary Search Trees
+Binary Tree to Binary Search Tree Conversion
+
+
+Heap Data Structure
+Binary Heap
+Why is Binary Heap Preferred over BST for Priority Queue?
+Heap Sort
+K’th Largest Element in an array
+Sort an almost sorted array
+Binomial Heap
+Fibonacci Heap
+Tournament Tree (Winner Tree) and Binary Heap
+
+
+Hashing Data Structure
+Hashing Introduction
+Separate Chaining for Collision Handling
+Open Addressing for Collision Handling
+Print a Binary Tree in Vertical Order
+Find whether an array is subset of another array
+Union and Intersection of two Linked Lists
+Find a pair with given sum
+Check if a given array contains duplicate elements within k distance from each other
+Find Itinerary from a given list of tickets
+Find number of Employees Under every Employee
+
+
+Graph Data Structure
+Graph and its representations
+Breadth First Traversal for a Graph
+Depth First Traversal for a Graph
+Applications of Depth First Search
+Applications of Breadth First Traversal
+Detect Cycle in a Directed Graph
+Detect Cycle in Graph using DSU
+Detect cycle in an Undirected Graph using DFS
+Longest Path in a Directed Acyclic Graph
+Topological Sorting
+Check whether a given graph is Bipartite or not
+Snake and Ladder Problem
+Minimize Cash Flow among a given set of friends who have borrowed money from each other
+Boggle (Find all possible words in a board of characters)
+Assign directions to edges so that the directed graph remains acyclic
+
+
+Advanced Data Structure
+1. Advanced Lists:
+Memory efficient doubly linked list
+XOR Linked List – A Memory Efficient Doubly Linked List | Set 1
+XOR Linked List – A Memory Efficient Doubly Linked List | Set 2
+Skip List | Set 1 (Introduction)
+Self Organizing List | Set 1 (Introduction)
+Unrolled Linked List | Set 1 (Introduction)
+2. Segment Tree Data Structure:
+Segment Tree | Set 1 (Sum of given range)
+Segment Tree | Set 2 (Range Minimum Query)
+Lazy Propagation in Segment Tree
+Persistent Segment Tree | Set 1 (Introduction)
+All Articles on Segment Tre
+
+3. Trie Data Structure:
+Trie | (Insert and Search)
+Trie | (Delete)
+Longest prefix matching – A Trie based solution in Java
+Print unique rows in a given boolean matrix
+How to Implement Reverse DNS Look Up Cache?
+How to Implement Forward DNS Look Up Cache?
+All Articles on Trie
+
+4. Binary Indexed Tree Data Structure:
+Binary Indexed Tree
+Two Dimensional Binary Indexed Tree or Fenwick Tree
+Binary Indexed Tree : Range Updates and Point Queries
+Binary Indexed Tree : Range Update and Range Queries
+All Articles on Binary Indexed Tree
+
+5. Suffix Array and Suffix Tree:
+Suffix Array Introduction
+Suffix Array nLogn Algorithm
+kasai’s Algorithm for Construction of LCP array from Suffix Array
+Suffix Tree Introduction
+Ukkonen’s Suffix Tree Construction – Part 1
+Ukkonen’s Suffix Tree Construction – Part 2
+Ukkonen’s Suffix Tree Construction – Part 3
+Ukkonen’s Suffix Tree Construction – Part 4,
+Ukkonen’s Suffix Tree Construction – Part 5
+Ukkonen’s Suffix Tree Construction – Part 6
+Generalized Suffix Tree
+Build Linear Time Suffix Array using Suffix Tree
+Substring Check
+Searching All Patterns
+Longest Repeated Substring,
+Longest Common Substring, Longest Palindromic Substring
+All Articles on Suffix Tree
+
+6. AVL Tree:
+AVL Tree | Set 1 (Insertion)
+AVL Tree | Set 2 (Deletion)
+AVL with duplicate keys
+7. Splay Tree:
+Splay Tree | Set 1 (Search)
+Splay Tree | Set 2 (Insert)
+8. B Tree:
+B-Tree | Set 1 (Introduction)
+B-Tree | Set 2 (Insert)
+B-Tree | Set 3 (Delete)
+9. Red-Black Tree:
+Red-Black Tree Introduction
+Red Black Tree Insertion.
+Red-Black Tree Deletion
+Program for Red Black Tree Insertion
+All Articles on Self-Balancing BSTs
+
+10. K Dimensional Tree:
+KD Tree (Search and Insert)
+K D Tree (Find Minimum)
+K D Tree (Delete)
+Others Data Structures:
+Treap (A Randomized Binary Search Tree)
+Ternary Search Tree
+Interval Tree
+Implement LRU Cache
+Sort numbers stored on different machines
+Find the k most frequent words from a file
+Given a sequence of words, print all anagrams together
+Tournament Tree (Winner Tree) and Binary Heap
+Decision Trees – Fake (Counterfeit) Coin Puzzle (12 Coin Puzzle)
+Spaghetti Stack
+Data Structure for Dictionary and Spell Checker?
+Cartesian Tree
+Cartesian Tree Sorting
+Sparse Set
+Centroid Decomposition of Tree
+Gomory-Hu Tree

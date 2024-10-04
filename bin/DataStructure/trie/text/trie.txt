@@ -1,0 +1,309 @@
+Trie Data Structure | Insert and Search
+
+The Trie data structure is a tree-like data structure used for storing a dynamic set of strings. It is commonly used for efficient retrieval and storage of keys in a large dataset. The structure supports operations such as insertion, search, and deletion of keys, making it a valuable tool in fields like computer science and information retrieval. In this article we are going to explore insertion and search operation in Trie Data Structure.
+
+
+Table of Content
+
+Representation of of Trie Node
+Insertion in Trie Data Structure
+Searching in Trie Data Structure
+Implementation of Insert and Search Operations in Trie
+Complexity Analysis of Trie Data Structure
+Representation of of Trie Node:
+A Trie data structure consists of nodes connected by edges. Each node represents a character or a part of a string. The root node, the starting point of the Trie, represents an empty string. Each edge emanating from a node signifies a specific character. The path from the root to a node represents the prefix of a string stored in the Trie.
+
+A simple structure to represent nodes of the English alphabet can be as follows.
+
+
+
+public class TrieNode {
+    
+    // Array for child nodes of each node
+    TrieNode[] child;
+    
+    // Used for indicating the end of a string
+    boolean wordEnd;
+
+    // Constructor
+    public TrieNode() {
+      
+        // Initialize the wordEnd 
+        // variable with false
+        wordEnd = false;
+
+        // Initialize every index of 
+        // the child array with null
+        // In Java, we do not have to 
+        // explicitely assign null as 
+        // the values are by default 
+        // assigned as null 
+        child = new TrieNode[26];
+    }
+}
+Insertion in Trie Data Structure:
+Let’s walk through the process of inserting the words into a Trie data structure. We have already cover the basics of Trie and its node structure.
+
+Here’s a visual representation of inserting the words “and” and “ant” into a Trie data structure:
+
+
+
+
+
+Insert Operation in Trie Data Structure
+
+
+
+
+Inserting “and” in Trie data structure:
+
+
+Start at the root node: The root node has no character associated with it and its wordEnd value is 0, indicating no complete word ends at this point.
+First character “a”: Calculate the index using ‘a’ – ‘a’ = 0. Check if the child[0] is null. Since it is, create a new TrieNode with the character “a“, wordEnd set to 0, and an empty array of pointers. Move to this new node.
+Second character “n”: Calculate the index using ‘n’ – ‘a’ = 13. Check if child[13] is null. It is, so create a new TrieNode with the character “n“, wordEnd set to 0, and an empty array of pointers. Move to this new node.
+Third character “d”: Calculate the index using ‘d’ – ‘a’ = 3. Check if child[3] is null. It is, so create a new TrieNode with the character “d“, wordEnd set to 1 (indicating the word “and” ends here).
+Inserting “ant” in Trie data structure:
+
+
+Start at the root node: Root node doesn’t contain any data but it keep track of every first character of every string that has been inserted.
+First character “a”: Calculate the index using ‘a’ – ‘a’ = 0. Check if the child[0] is null. We already have the “a” node created from the previous insertion. so move to the existing “a” node.
+First character “n”: Calculate the index using ‘n’ – ‘a’ = 13. Check if child[13] is null. It’s not, so move to the existing “n” node.
+Second character “t”: Calculate the index using ‘t’ – ‘a’ = 19. Check if child[19] is null. It is, so create a new TrieNode with the character “t“, wordEnd set to 1 (indicating the word “ant” ends here).
+Recommended Problem
+Insert and Search in a Trie
+Companies:
+Accolite
+Amazon
++3 more
+Show Topics 
+Solve Problem
+Medium
+65.68%
+64K
+Below is the implementation of insertion of strings in Trie data structure:
+
+Time Complexity: O(number of words * maxLengthOfWord)
+Auxiliary Space: O(number of words * maxLengthOfWord)
+
+Searching in Trie Data Structure:
+Searching for a key in Trie data structure is similar to its insert operation. However, It only compares the characters and moves down. The search can terminate due to the end of a string or lack of key in the trie. 
+
+Steps by step approach for searching in Trie Data structure:
+
+Start at the root node. This is the starting point for all searches within the Trie.
+Traverse the Trie based on the characters of the word you are searching for. For each character, follow the corresponding branch in the Trie. If the branch doesn’t exist, the word is not present in the Trie.
+If you reach the end of the word and the wordEnd flag is set to 1, the word has been found.
+If you reach the end of the word and the wordEnd flag is 0, the word is not present in the Trie, even though it shares a prefix with an existing word.
+Below is the implementation of the above approach:
+
+
+
+
+
+// Method to insert a key into the Trie
+static void insertKey(TrieNode root, String key)
+{
+
+    // Initialize the curr pointer with the root node
+    TrieNode curr = root;
+
+    // Iterate across the length of the string
+    for (char c : key.toCharArray()) {
+
+        // Check if the node exists for the
+        // current character in the Trie
+        if (curr.child[c - 'a'] == null) {
+
+            // If node for current character does
+            // not exist then make a new node
+            TrieNode newNode = new TrieNode();
+
+            // Keep the reference for the newly
+            // created node
+            curr.child[c - 'a'] = newNode;
+        }
+
+        // Move the curr pointer to the
+        // newly created node
+        curr = curr.child[c - 'a'];
+    }
+
+    // Mark the end of the word
+    curr.wordEnd = true;
+}
+
+Output
+Query String: do
+The query string is present in the Trie
+Query String: geek
+The query string is present in the Trie
+Query String: bat
+The query string is not present in the Trie
+Here’s a visual representation of searching word “dad” in Trie data structure:
+
+Let’s assume that we have successfully inserted the words “and“, “ant“, and “dad” into our Trie, and we have to search for specific words within the Trie data structure. Let’s try searching for the word “dad“:
+
+
+
+
+
+
+Search Operation in Trie Data Structure
+
+
+
+
+We start at the root node.
+We follow the branch corresponding to the character ‘d’.
+We follow the branch corresponding to the character a’.
+We follow the branch corresponding to the character ‘d’.
+We reach the end of the word and wordEnd flag is 1. This means that “dad” is present in the Trie.
+Below is the implementation of searching strings in Trie Data Structure:
+
+
+
+// Method to search a key in the Trie
+static boolean searchKey(TrieNode root, String key)
+{
+
+    // Initialize the curr pointer with the root node
+    TrieNode curr = root;
+
+    // Iterate across the length of the string
+    for (char c : key.toCharArray()) {
+
+        // Check if the node exists for the
+        // current character in the Trie
+        if (curr.child[c - 'a'] == null)
+            return false;
+
+        // Move the curr pointer to the
+        // already existing node for the
+        // current character
+        curr = curr.child[c - 'a'];
+    }
+
+    // Return true if the word exists
+    // and is marked as ending
+    return curr.wordEnd;
+}
+Time Complexity: O(number of words * maxLengthOfWord)
+Auxiliary Space: O(number of words * maxLengthOfWord)
+
+Implementation of Insert and Search Operations in Trie Data Structure:
+Steps-by-step approach:
+
+Create a root node with the help of TrieNode() constructor.
+Store a collection of strings that have to be inserted in the trie in a vector of strings say, arr.
+Inserting all strings in Trie with the help of the insert_key() function,
+Search strings with the help of search_key() function.
+Below is the implementation of the above approach:
+
+
+
+
+
+import java.util.Arrays;
+import java.util.List;
+
+class TrieNode {
+
+    // Java Makes sure that all 26 are null
+    TrieNode[] child = new TrieNode[26];
+
+    // for end of word
+    boolean wordEnd = false;
+}
+
+class GfG {
+
+    // Method to insert a key into the Trie
+    static void insertKey(TrieNode root, String key) {
+
+        // Initialize the curr pointer with the root node
+        TrieNode curr = root;
+
+        // Iterate across the length of the string
+        for (char c : key.toCharArray()) {
+
+            // Check if the node exists for the 
+            // current character in the Trie
+            if (curr.child[c - 'a'] == null) {
+
+                // If node for current character does 
+                // not exist then make a new node
+                TrieNode newNode = new TrieNode();
+
+                // Keep the reference for the newly
+                // created node
+                curr.child[c - 'a'] = newNode;
+            }
+
+            // Move the curr pointer to the
+            // newly created node
+            curr = curr.child[c - 'a'];
+        }
+
+        // Mark the end of the word
+        curr.wordEnd = true;
+    }
+
+    // Method to search a key in the Trie
+    static boolean searchKey(TrieNode root, String key) {
+
+        // Initialize the curr pointer with the root node
+        TrieNode curr = root;
+
+        // Iterate across the length of the string
+        for (char c : key.toCharArray()) {
+
+            // Check if the node exists for the 
+            // current character in the Trie
+            if (curr.child[c - 'a'] == null) 
+                return false;
+
+            // Move the curr pointer to the 
+            // already existing node for the 
+            // current character
+            curr = curr.child[c - 'a'];
+        }
+
+        // Return true if the word exists 
+        // and is marked as ending
+        return curr.wordEnd;
+    }
+
+    public static void main(String[] args) {
+
+        // Create an example Trie
+        TrieNode root = new TrieNode();
+        List<String> arr = Arrays.asList(
+            "and", "ant", "do", "geek", "dad", "ball");
+        for (String s : arr) {
+            insertKey(root, s);
+        }
+
+        // One by one search strings
+        List<String> searchKeys = 
+              Arrays.asList("do", "gee", "bat");
+        for (String s : searchKeys) {
+            System.out.println("Key : " + s);
+            if (searchKey(root, s)) 
+                System.out.println("Present");
+            else 
+                System.out.println("Not Present");        
+        }
+    }
+}
+
+Output
+Query String: do
+The query string is present in the Trie
+Query String: geek
+The query string is present in the Trie
+Query String: bat
+The query string is not present in the Trie
+Complexity Analysis of Trie Data Structure:
+Operation	Time Complexity
+Insertion	O(n) Here n is the length of the string inserted
+Searching	O(n) Here n is the length of the string searched
